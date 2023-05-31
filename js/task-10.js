@@ -23,7 +23,7 @@ const createBoxes = (amount) => {
 };
 const destroyBoxes = () => {
   box.innerHTML = "";
-}
+};
 btnCreate.addEventListener("click", addBx);
 function addBx(event) {
   let numberBoxAdd = createBoxes(inputAmount.value);
