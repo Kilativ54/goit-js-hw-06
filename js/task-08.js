@@ -9,6 +9,7 @@ function sendForm(event) {
   } = event.currentTarget;
   if (email.value === "" || password.value === "") {
     alert("Заповніть будь ласка всі поля!");
+    return;
   }
   const userProfil = { email: email.value, password: password.value };
   console.log(userProfil);
